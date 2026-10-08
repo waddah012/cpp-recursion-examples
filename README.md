@@ -1,33 +1,16 @@
-# Recursion Examples
+# Recursion examples
 
-Recursive factorial, array summation, and binary search.
+These are three small C++ examples I worked on while learning recursion: factorial, adding numbers in an array, and binary search.
 
-An educational C++ example developed from coursework, organized as a standalone project.
+The program finds the factorials of 5 and 7, adds the first four numbers in an array, and searches for 8. Everything is already set in the code, so you can run it without entering anything.
 
-## Build and run
+The factorial function is meant for small positive numbers. It does not check for negative input or numbers that are too large for an int.
 
-Requires a C++17 compiler and Make. Smoke checks also require Python 3.
+To build and run it, you need a C++17 compiler and Make. Open a terminal in this folder and run:
 
 ```sh
 make
 make run
-make check
 ```
 
-To choose a compiler: `make CXX=clang++` or `make CXX=g++`. Run `make clean` to remove build outputs.
-
-## Example
-
-Run the executable to see factorials of 5 and 7, a prefix sum, and binary search results.
-
-## Structure
-
-- `src/`: source code and headers.
-- `tests/smoke.py`: representative console checks with execution timeouts.
-- `Makefile`: builds the source files together into `build/example`.
-
-## Scope
-
-These demonstrations use small, fixed inputs. Factorial does not validate negative inputs or detect integer overflow.
-
-The source retains the original exercise logic and explanatory comments. Build outputs, submission documents, and course materials are not part of this repository.
+You can also run `make check` to check the sample output. That needs Python 3. Use `make clean` if you want to remove the compiled program.
